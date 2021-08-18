@@ -1,12 +1,14 @@
 def sing():
-    for i in (1,13):
-        if(i < 5):
+    for i in range (1,13):
+        if i < 5:
             print("let it be,")
-        elif (i%5==0):
+        if i == 5:
             print("whisper words of wisdom,")
-        elif (i%11==0):
+        if i > 5 and i < 11:
+            print("let it be,")
+        if i == 11:
             print("there will be an answer,")
-        else:
+        if i == 12:
             print("let it be")
 
 sing()
